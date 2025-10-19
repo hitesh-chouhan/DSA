@@ -1,0 +1,48 @@
+* In hashing, there is a hash function that maps keys to some values.
+* Firstly, we create the hash array, and we store the values in that array by considering indexes as keys;
+* In Arrays we define the size of hash Array according to the input size given in que. generally 10^7 or 10^8;
+
+* In strings we define the size of hash Array 26 in case of only loweCase and 256 in case of uppercase;
+ASCII value of a-z is 97-122;
+ASCII value of A-Z is 65-90;
+
+
+// HashMap
+* HashMap holds a Key value pair; similar to maps in c++;
+* its package we import from java.utils.HashMap;
+* HashMap<String, Integer> map = new HashMap<>(); like this we create a HashMap;
+* map.put('a',67); this is how we insert the key value in HashMap;
+* map.contains(Key) gives true or false;
+* map.get(key) gives the value of key or null;
+
+// to iterate a HashMap;
+for( Map.Entry<Integer,Integer> e : map.EntrySet() ){
+    e.getKey();
+    e.getValue();
+}
+
+// to remove a key
+map.remove(key);
+
+
+// HashSet:
+* HashSet is a structure that contains unique element; (It is similar to the ArrayList).
+* We import HashSet as java,utils.HashSet.
+* HashSet<Integer> set = new HashSet<>();
+* set.add(el.) to add the elements;
+* set.contains(el) to check whether the set contains the element; (Gives true/false).
+* set.remove(el) to remove the element;
+* They all functions have time complexity O(1);
+
+# iterate a set:=>{
+
+* sets are unordered. they don't have any index.
+* to iterate a set we import Iterator as java.utils.Iterator;
+* Iterator it = set.iterator();
+* iterator have two function it.hasNext() that gives true/false and it.next() gives next element;
+* That's why we use while loop;
+
+ while(it.hasNext){
+    print(it.next());
+ }
+}
